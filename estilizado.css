@@ -1,0 +1,57 @@
+/*Fuentes importadas= Open Sans*/
+
+h1 {
+    color:#B22222;
+    text-align:center;
+    font-size:3rem;
+}
+
+#logo-one-piece {
+    height:30px;
+    width:100px;
+}
+.flex-container {
+  display: flex;
+
+}
+.item {
+  background: steelblue;
+  width: 80px;
+  height: 80px;
+}
+
+
+p {
+    line-height:1.6rem
+}
+html {
+    background-color: #00b08d
+}
+
+body {
+    color:#FFF;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-align:start;
+    font-size:1rem;
+}
+
+#firstpar {
+    text-align:justify;
+    color:#000000;
+    border:1px transparent solid;
+    padding:10px;
+    margin:15px;
+
+}
+
+.hlink {
+    text-decoration:none;
+    color:#9900ff;
+}
+
+
+a:hover {
+    color:#ff0000;
+    text-decoration:underline;
+    font-size:1.2rem;
+}
