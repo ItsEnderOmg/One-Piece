@@ -1,0 +1,57 @@
+/*Fonts= Open Sans / Pirata One */
+
+#logo-one-piece {
+    height:12%;
+    width:12%;
+}
+
+header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    background: #000000;
+    border: 3px #f0f0f0 solid;
+}
+
+.header-link {
+    font-family: "Pirata One";
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: rgb(114, 104, 251)
+}
+.header-link:hover {
+    text-decoration: underline;
+    font-size: 1.7rem;
+    color: #d90000
+
+}
+.item {
+  background: steelblue;
+  width: 80px;
+  height: 80px;
+}
+html {
+    background-color: #202020ed
+}
+
+body {
+    color:#FFF;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-align:start;
+    font-size:1rem;
+}
+
+.hlink {
+    text-decoration:none;
+    color:#9900ff;
+}
+
+
+a:hover {
+    color:#ff0000;
+    text-decoration:underline;
+    font-size:1.2rem;
+}
