@@ -1,8 +1,12 @@
 /*Fonts= Open Sans / Pirata One */
 
+html {
+    background-color: #2f6a8d;
+}
+
 #logo-one-piece {
-    height:12%;
-    width:12%;
+    height: 12%;
+    width: 12%;
 }
 
 header {
@@ -16,9 +20,10 @@ header {
 }
 
 .header-link {
-    font-family: "Pirata One";
+    font-family: "Pirata One", sans-serif;
     margin: 20px;
-    text-decoration: none;
+    text-decoration: underline;
+
     font-size: 1.6rem;
     color: rgb(114, 104, 251)
 }
@@ -26,29 +31,67 @@ header {
     text-decoration: underline;
     font-size: 1.7rem;
     color: #d90000
-
-}
-.item {
-  background: steelblue;
-  width: 80px;
-  height: 80px;
-}
-html {
-    background-color: #202020ed
 }
 
-body {
+.main-title {
+    display: flex;
+    min-width: 100px;
+    min-height: 80px;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("one-piece-characters.jpeg");
+    background-repeat: no-repeat;
+    background-position:center;
+    
+    font-family: "Pirata One", Arial, Helvetica, sans-serif;
+    font-size: 2.2rem;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    color: #ffffff;
+    /*Text shadow improves the legibility of the main title, creating a shadow right and down
+    to the text, changing its difumination and its color*/
+    text-shadow: 5px 3px 2px black;
+}
+
+
+main {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     color:#FFF;
-    font-family: 'Open Sans', Arial, sans-serif;
     text-align:start;
-    font-size:1rem;
+    font-size:1.2rem;
+    margin: 10px;
+}
+
+h2 {
+    color: black;
+    background: white;
+}
+
+/*Makin the image invisible with the none display value, the absolute position makes the image appear in front of the text instead
+of pushing it back*/
+.invisible-image {
+    display: none;
+    position: absolute; 
+    margin-top: 10px;
+}
+
+/*Display inline-block makes the image appear right down the text*/
+#under-a-rock {
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-thickness: 1.7px;
+}
+
+/*Show the image when you pass the cursor over the text*/
+#under-a-rock:hover .invisible-image {
+    display:block;
 }
 
 .hlink {
     text-decoration:none;
-    color:#9900ff;
+    color:#05ff32;
 }
-
 
 a:hover {
     color:#ff0000;
