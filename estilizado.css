@@ -1,7 +1,7 @@
 /*Fonts= Open Sans / Pirata One */
 
 html {
-    background-color: #2f6a8d;
+    background-image: url("https://static.wikia.nocookie.net/onepiece/images/b/b5/Site-background-light/revision/latest/scale-to-width-down/2048?cb=20211209210547");
 }
 
 #logo-one-piece {
@@ -57,15 +57,23 @@ header {
 
 main {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    color:#FFF;
+    color:#050505;
     text-align:start;
-    font-size:1.2rem;
-    margin: 10px;
+    font-size:1.65rem;
+    margin: 15px;
+}
+
+.h2-background {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
 }
 
 h2 {
-    color: black;
-    background: white;
+    margin-left: 16px;
+    font-size: 2rem;
+    font-weight:bold;
+    text-transform: capitalize;
+
 }
 
 /*Makin the image invisible with the none display value, the absolute position makes the image appear in front of the text instead
@@ -81,6 +89,7 @@ of pushing it back*/
     display: inline-block;
     text-decoration: underline;
     text-decoration-thickness: 1.7px;
+    color:blue
 }
 
 /*Show the image when you pass the cursor over the text*/
@@ -97,4 +106,15 @@ a:hover {
     color:#ff0000;
     text-decoration:underline;
     font-size:1.2rem;
+}
+
+p {
+    background-color: #f0f0f0;
+    padding: 10px 
+}
+
+#h2-no-div {
+    background: black;
+    color:white;
+    padding: 30px;
 }
