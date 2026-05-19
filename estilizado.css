@@ -65,18 +65,15 @@ main {
 
 .h2-background {
     color: rgb(255, 255, 255);
-    background: rgb(0, 0, 0);
-}
-
-h2 {
-    margin-left: 16px;
-    font-size: 2rem;
-    font-weight:bold;
+    background: rgb(0, 47, 255);
+    padding-left:10px;
+    font-size: 1.5rem;
     text-transform: capitalize;
-
 }
 
-/*Makin the image invisible with the none display value, the absolute position makes the image appear in front of the text instead
+
+
+/*Making the image invisible with the none display value, the absolute position makes the image appear in front of the text instead
 of pushing it back*/
 .invisible-image {
     display: none;
@@ -85,7 +82,7 @@ of pushing it back*/
 }
 
 /*Display inline-block makes the image appear right down the text*/
-#under-a-rock {
+.invisible-image-text {
     display: inline-block;
     text-decoration: underline;
     text-decoration-thickness: 1.7px;
@@ -93,8 +90,15 @@ of pushing it back*/
 }
 
 /*Show the image when you pass the cursor over the text*/
-#under-a-rock:hover .invisible-image {
+.invisible-image-text:hover .invisible-image {
     display:block;
+}
+
+/* The second crying baby image was too big, so i changed it size here */
+.invisible-image-text:hover #cb2 {
+    display:block;
+    max-width:40%;
+    max-height:40%;
 }
 
 .hlink {
@@ -102,19 +106,47 @@ of pushing it back*/
     color:#05ff32;
 }
 
-a:hover {
-    color:#ff0000;
-    text-decoration:underline;
-    font-size:1.2rem;
-}
 
 p {
-    background-color: #f0f0f0;
+    background-color: rgba(238, 238, 238, 0.601);
     padding: 10px 
 }
 
-#h2-no-div {
-    background: black;
-    color:white;
-    padding: 30px;
+li {
+    background-color: rgba(238, 238, 238, 0.601);
+    padding: 10px 
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; 
+}
+
+.flex-item h2 {
+    background-color:rgb(114, 104, 251);
+    font-size: 3rem;
+    text-align:center;
+    display: block;
+    width: 100%;
+}
+
+#go-back-to-top {
+    text-align: center;
+    font-size: 2rem;
+    background-color: #f0f0f0;
+}
+
+#go-back-to-top a {
+    text-decoration: none;
+    color:rgb(255, 50, 50);
+  
 }
